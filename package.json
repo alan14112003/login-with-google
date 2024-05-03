@@ -1,0 +1,33 @@
+{
+  "name": "loginwithgoogle",
+  "version": "1.0.0",
+  "description": "login with google to api",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "login",
+    "with",
+    "google"
+  ],
+  "author": "alan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.5",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "google-auth-library": "^9.9.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.3"
+  }
+}

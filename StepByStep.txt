@@ -1,0 +1,22 @@
+|-----------------| Các bước để xử lý một request |-----------------| 
+
+1. Xác định đầu vào và đầu ra của request là gì.
+2. Phân tích hướng xử lý để nhận đầu vào đó và trả về đầu ra mong muốn.
+3. Dựng thuật toán để giải quyết vấn đề và kiểm tra lỗi không mong muốn.
+
+|-------------------------------------------------------------------| 
+
+1. 
+- đầu vào: một token sau khi đăng nhập bằng google trả về.
+- đầu ra: thông tin user và token để xác thực user đó.
+
+2. 
+bước 1: nhận đầu vào từ req.body qua field token
+bước 2: giải mã token vừa nhận được đó bằng google auth library để lấy được email user.
+bước 3: kiểm tra email đó có tồn tại trong bảng user hay không. 
++ nếu có tồn tại thì trả về thông tin user cùng với token.
++ nếu chưa tồn tại thì tiến hành tạo user với một mật khẩu mặc định,
+  thông báo cho user đổi mật khẩu sau khi đăng nhập
+trả về thông tin user và token
+
+3. bắt đầu làm thôi.
